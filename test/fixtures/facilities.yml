@@ -2,20 +2,20 @@
 
 one:
   name: MyString
-  adress: MyString
+  address: MyString
   tel_no: MyString
   ostomate_toilet: 1
   ccheer_toilet: 1
   cbet_toilet: 1
   wchair_lift: 1
-  wchair_Escalator: 1
+  wchair_escalator: 1
 
 two:
   name: MyString
-  adress: MyString
+  address: MyString
   tel_no: MyString
   ostomate_toilet: 1
   ccheer_toilet: 1
   cbet_toilet: 1
   wchair_lift: 1
-  wchair_Escalator: 1
+  wchair_escalator: 1

@@ -18,7 +18,7 @@ class FacilitiesControllerTest < ActionController::TestCase
 
   test "should create facility" do
     assert_difference('Facility.count') do
-      post :create, facility: { adress: @facility.adress, cbet_toilet: @facility.cbet_toilet, ccheer_toilet: @facility.ccheer_toilet, name: @facility.name, ostomate_toilet: @facility.ostomate_toilet, tel_no: @facility.tel_no, wchair_Escalator: @facility.wchair_Escalator, wchair_lift: @facility.wchair_lift }
+      post :create, facility: { address: @facility.address, cbet_toilet: @facility.cbet_toilet, ccheer_toilet: @facility.ccheer_toilet, name: @facility.name, ostomate_toilet: @facility.ostomate_toilet, tel_no: @facility.tel_no, wchair_escalator: @facility.wchair_escalator, wchair_lift: @facility.wchair_lift }
     end
 
     assert_redirected_to facility_path(assigns(:facility))
@@ -35,7 +35,7 @@ class FacilitiesControllerTest < ActionController::TestCase
   end
 
   test "should update facility" do
-    patch :update, id: @facility, facility: { adress: @facility.adress, cbet_toilet: @facility.cbet_toilet, ccheer_toilet: @facility.ccheer_toilet, name: @facility.name, ostomate_toilet: @facility.ostomate_toilet, tel_no: @facility.tel_no, wchair_Escalator: @facility.wchair_Escalator, wchair_lift: @facility.wchair_lift }
+    patch :update, id: @facility, facility: { address: @facility.address, cbet_toilet: @facility.cbet_toilet, ccheer_toilet: @facility.ccheer_toilet, name: @facility.name, ostomate_toilet: @facility.ostomate_toilet, tel_no: @facility.tel_no, wchair_escalator: @facility.wchair_escalator, wchair_lift: @facility.wchair_lift }
     assert_redirected_to facility_path(assigns(:facility))
   end
 
