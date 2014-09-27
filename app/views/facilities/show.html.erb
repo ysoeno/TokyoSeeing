@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("name") %>:</strong>
+  <%= @facility.name %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("address") %>:</strong>
+  <%= @facility.address %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("tel_no") %>:</strong>
+  <%= @facility.tel_no %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("ostomate_toilet") %>:</strong>
+  <%= @facility.ostomate_toilet %>
+</p>
+
+<p>
+<strong><%= Facility.human_attribute_name("ccheer_toilet") %>:</strong>
+  <%= @facility.ccheer_toilet %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("cbet_toilet") %>:</strong>
+  <%= @facility.cbet_toilet %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("wchair_lift") %>:</strong>
+  <%= @facility.wchair_lift %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("wchair_escalator") %>:</strong>
+  <%= @facility.wchair_escalator %>
+</p>
+
+<%= link_to 'Edit', edit_facility_path(@facility) %> |
+<%= link_to 'Back', facilities_path %>

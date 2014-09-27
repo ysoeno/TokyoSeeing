@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    models:
+      facility: 施設
+    attributes:
+      facility:
+        name: 施設名
+        address:  住所
+        tel_no:  電話番号
+        ostomate_toilet:  オストメイト対応トイレ
+        ccheer_toilet:  ベビーチェア対応トイレ
+        cbet_toilet:  ベビーベット対応トイレ
+        wchair_lift:  車いす対応エレベータ
+        wchair_escalator:  車いす対応エスカレーター

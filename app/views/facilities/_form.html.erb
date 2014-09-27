@@ -1,0 +1,49 @@
+<%= form_for(@facility) do |f| %>
+  <% if @facility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@facility.errors.count, "error") %> prohibited this facility from being saved:</h2>
+
+      <ul>
+      <% @facility.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :tel_no %><br>
+    <%= f.text_field :tel_no %>
+  </div>
+  <div class="field">
+    <%= f.label :ostomate_toilet %><br>
+    <%= f.number_field :ostomate_toilet %>
+  </div>
+  <div class="field">
+    <%= f.label :ccheer_toilet %><br>
+    <%= f.number_field :ccheer_toilet %>
+  </div>
+  <div class="field">
+    <%= f.label :cbet_toilet %><br>
+    <%= f.number_field :cbet_toilet %>
+  </div>
+  <div class="field">
+    <%= f.label :wchair_lift %><br>
+    <%= f.number_field :wchair_lift %>
+  </div>
+  <div class="field">
+    <%= f.label :wchair_escalator %><br>
+    <%= f.number_field :wchair_escalator %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
