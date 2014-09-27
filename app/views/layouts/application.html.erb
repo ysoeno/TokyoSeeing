@@ -6,9 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="oneColLiqCtrHdr">
+  <div id="header">
+    <h1><img src="projectRogo.png"></h1>
+  <!-- end #header --></div>
+  <div id="container">
+    <div id="mainContent">
 
 <%= yield %>
 
+  <div id="footer">
+    <p><img src="tonika_rogo.png"></p>
+  <!-- end #footer --></div>
 </body>
 </html>

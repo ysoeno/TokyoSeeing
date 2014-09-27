@@ -1,3 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+
+/* centerArea */
+.oneColLiqCtrHdr #container {
+    width: 80%;
+    background:#FFaa33;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* header */
+    .oneColLiqCtrHdr #header {
+       background-image:url(headerBg.png);
+       padding: 0 10px 0 20px;
+       height:78px;
+    }
+    .oneColLiqCtrHdr #header img{
+        margin: 20px 0px 0px 0px;
+    }
+    .oneColLiqCtrHdr #header h1 {
+       margin: 0;
+       padding: 10px 0;
+    }
+
+    /* maincontents */
+    .oneColLiqCtrHdr #mainContent {
+       padding: 0 20px;
+       background: #FFFFFF;
+    }
+
+    .oneColLiqCtrHdr #form{
+       border: 1px solid #000000;
+       text-align:center;
+       margin:40px 0px;
+    }
+    .oneColLiqCtrHdr #datas{
+        text-align:center;
+        margin:auto;
+        width:100%;
+    }
+    /* table */
+    #datas table,#datas td,#datas th {
+      border-collapse: 0px;
+      border:1px solid #333;
+    }
+        #datas table{
+           width: 100%;
+ 	   text-align: left;
+           vertical-align: top;
+	   color: #333;
+  	   background-color: #eee;
+	}
+	    #datas th{
+	        min-width:100px;
+	        padding: 6px;
+	        color: #333;
+	        background-color: #eee;
+	    }
+	        #datas td{
+		    padding: 6px;
+		    background:#003333;
+		    background-color:#fff;
+	        }
+		#datas .t_center{
+  	            text-align:center;
+                }
+
+		.oneColLiqCtrHdr #footer { 
+		    padding: 30px 10px;
+		    background:#ffffff;
+		    text-align:right;
+                } 
+		.oneColLiqCtrHdr #footer p {
+		    margin: 0;
+		    padding: 10px 0;
+		}
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
