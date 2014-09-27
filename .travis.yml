@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+- 2.1.2
+addons:
+  postgresql: '9.3'
+before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: Q5yo0YSNow7rzDaLOaFHM/A04A3mPDeUT/nrye+L3vIBkS4w3ey3/WcAoHDbwHX265acGt9VSZ3dBLfq81w+/xh9boG8QqgdnhmvpRCIaX50mxrVzlwfi38h3a1GUTyZtds5Cmwak9OMjGCsvoc6dQwQ7vDk8ne13/6q2jw/pnw=
+  app: tokyo-seeing
+  on:
+    repo: enPIT-Tonika/TokyoSeeing
