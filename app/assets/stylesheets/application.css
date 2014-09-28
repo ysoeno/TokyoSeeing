@@ -19,7 +19,7 @@ body {
 
 /* header */
     .oneColLiqCtrHdr #header {
-       background-image:url(headerBg.png);
+       background-image:url(/headerBg.png);
        padding: 0 10px 0 20px;
        height:78px;
     }
