@@ -1,0 +1,44 @@
+<div id="form">
+ <h1>施設情報</h1>
+</div>
+
+<div id="datas"> 
+
+<table>
+  <thead>
+    <tr>
+      <th><%= Facility.human_attribute_name("name") %></th>
+      <th><%= Facility.human_attribute_name("zip_code") %></th>
+      <th><%= Facility.human_attribute_name("address") %></th>
+      <th><%= Facility.human_attribute_name("tel_no") %></th>
+      <th><%= Facility.human_attribute_name("ostomate_toilet") %></th>
+      <th><%= Facility.human_attribute_name("ccheer_toilet") %></th>
+      <th><%= Facility.human_attribute_name("cbet_toilet") %></th>
+      <th><%= Facility.human_attribute_name("wchair_lift") %></th>
+      <th><%= Facility.human_attribute_name("wchair_escalator") %></th>
+      <th><%= Facility.human_attribute_name("description") %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facilities.each do |facility| %>
+      <tr>
+        <td><%= facility.name %></td>
+        <td><%= facility.zip_code %></td>
+        <td><%= facility.address %></td>
+        <td><%= facility.tel_no %></td>
+        <td><%= checkSupport facility.ostomate_toilet %></td>
+        <td><%= checkSupport facility.ccheer_toilet %></td>
+        <td><%= checkSupport facility.cbet_toilet %></td>
+        <td><%= checkSupport facility.wchair_lift %></td>
+        <td><%= checkSupport facility.wchair_escalator %></td>
+        <td><%= facility.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+<%= link_to '[管理]', facilities_path %>
