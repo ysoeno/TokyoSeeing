@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong><%= Facility.human_attribute_name("zip_code") %>:</strong>
+  <%= @facility.zip_code %>
+</p>
+
+<p>
   <strong><%= Facility.human_attribute_name("address") %>:</strong>
   <%= @facility.address %>
 </p>
@@ -38,6 +43,11 @@
 <p>
   <strong><%= Facility.human_attribute_name("wchair_escalator") %>:</strong>
   <%= @facility.wchair_escalator %>
+</p>
+
+<p>
+  <strong><%= Facility.human_attribute_name("description") %>:</strong>
+  <%= @facility.description %>
 </p>
 
 <%= link_to 'Edit', edit_facility_path(@facility) %> |
