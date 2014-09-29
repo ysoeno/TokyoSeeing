@@ -2,6 +2,7 @@
 
 one:
   name: MyString
+  zip_code: 000-0000
   address: MyString
   tel_no: MyString
   ostomate_toilet: 1
@@ -9,9 +10,11 @@ one:
   cbet_toilet: 1
   wchair_lift: 1
   wchair_escalator: 1
+  description: test
 
 two:
   name: MyString
+  zip_code: 000-0000
   address: MyString
   tel_no: MyString
   ostomate_toilet: 1
@@ -19,3 +22,4 @@ two:
   cbet_toilet: 1
   wchair_lift: 1
   wchair_escalator: 1
+  description: test

@@ -12,3 +12,5 @@ ja:
         cbet_toilet:  ベビーベット対応トイレ
         wchair_lift:  車いす対応エレベータ
         wchair_escalator:  車いす対応エスカレーター
+        zip_code: 郵便番号
+        description: 概要
